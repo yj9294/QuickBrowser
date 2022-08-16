@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Wcc-B5-vVc" customClass="PrivacyView" customModule="QuickBrowser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-zy-A1p">
+                    <rect key="frame" x="0.0" y="387" width="414" height="509"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Od-Ma-T41">
+                            <rect key="frame" x="157" y="12" width="100" height="3"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="5wq-oy-4Eg"/>
+                                <constraint firstAttribute="height" constant="3" id="GaU-kH-j6P"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JaP-WN-jKD">
+                            <rect key="frame" x="16" y="75" width="382" height="400"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="400" id="Cnb-8y-bdH"/>
+                            </constraints>
+                            <mutableString key="text">n this Privacy Policy, we describe the types of personal information we process through the Services, how we use the information, how long we may retain the information, with whom we may share the information, and the choices you have about using the information and exercising your right. We also describe the steps we take to protect information and tell you how to contact us about our privacy practices.
+
+
+
+Collect  information
+
+During the process of using Quick browser app, we will send your IP address, country code (MCC), mobile phone language, system version and other information to our server. This information is only used to enhance, modify, personalize or otherwise improve our products and services; determine the effectiveness of promotions and advertisements; prevent security breaches and abuses, and thereby provide you with agreements and services that are compliant with the country or region . This information will be deleted within a short period of time after learning of your country or region and will not be permanently saved.
+
+
+
+In order to make Quick browser services more useful to you, we may collect information from you, including but not limited to:
+
+Software information, such as version, release, system version, product list, etc.;
+
+Hardware information such as IMEI, MAC address of your device, model information, manufacturer;
+
+Users are identified by Universally Unique Identifiers (UUIDs), which this product may store by storing so-called Universally Unique Identifiers (or UUIDs for short) to track users for analytical purposes or to store user preferences. This identifier is generated when this product is installed, it persists between product launch and update, but is lost when the user deletes the product. Reinstalling generates a new UUID.
+
+Information about your usage, such as browser type, language preference, time and time zone, errors and reports, buttons clicked, settings, entered in the URL bar;
+
+Network information: IP address, network operator, approximate location of IP address or Wi-Fi based on your/surrounding connections, recommended sites, speed requested by each visitor;
+
+
+
+In general, personal information submitted to us is either used to respond to user feedback and/or requests or to help us enhance customer service. Personal information may be used in the following ways:
+
+improve the administration of our browser services;
+
+improve our browser service experience;
+
+for editorial and feedback purposes;
+
+Statistical analysis of user preferences;
+
+Improve content and assist with product development;
+
+To send newsletters, surveys, special offers and any other promotional materials related to our software and/or services and for other marketing purposes;
+
+If we are legally obliged to provide your information to third parties.
+
+
+
+Children's Personal Information
+
+These services are designed for general audiences, not children. For the Services, we do not knowingly solicit or collect personal information from children under the age of 13. If we learn that we have collected personal information from a child under the age of 13, we will delete that information immediately. If you believe that a child under the age of 13 may have provided us with personal information, please contact us as described in the "Contact Us" section of this Privacy Policy.
+
+
+
+Update our Privacy Policy
+
+This Privacy Policy may be updated to reflect changes in our personal information practices in connection with the Services, or changes in applicable law. We will post a notice on our website to notify you of material changes to our Privacy Policy and will note the time of the last update at the top of the notice.</mutableString>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wc-LG-ZXJ">
+                            <rect key="frame" x="157" y="39" width="100.5" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="7Od-Ma-T41" firstAttribute="centerX" secondItem="lXh-zy-A1p" secondAttribute="centerX" id="2JT-Mt-luw"/>
+                        <constraint firstItem="2wc-LG-ZXJ" firstAttribute="centerX" secondItem="lXh-zy-A1p" secondAttribute="centerX" id="DtA-0W-8ed"/>
+                        <constraint firstItem="7Od-Ma-T41" firstAttribute="top" secondItem="lXh-zy-A1p" secondAttribute="top" constant="12" id="Ugp-lS-qCe"/>
+                        <constraint firstItem="JaP-WN-jKD" firstAttribute="top" secondItem="2wc-LG-ZXJ" secondAttribute="bottom" constant="16" id="VJQ-8E-PVW"/>
+                        <constraint firstAttribute="trailing" secondItem="JaP-WN-jKD" secondAttribute="trailing" constant="16" id="avf-5Q-yyg"/>
+                        <constraint firstItem="JaP-WN-jKD" firstAttribute="leading" secondItem="lXh-zy-A1p" secondAttribute="leading" constant="16" id="kdB-xE-WJD"/>
+                        <constraint firstItem="2wc-LG-ZXJ" firstAttribute="top" secondItem="7Od-Ma-T41" secondAttribute="bottom" constant="24" id="wqZ-eo-YFI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="J2e-0b-N07"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J2e-0b-N07" firstAttribute="bottom" secondItem="JaP-WN-jKD" secondAttribute="bottom" id="7QM-TW-cDc"/>
+                <constraint firstItem="lXh-zy-A1p" firstAttribute="leading" secondItem="J2e-0b-N07" secondAttribute="leading" id="XJP-Px-dw9"/>
+                <constraint firstAttribute="trailing" secondItem="lXh-zy-A1p" secondAttribute="trailing" id="ici-ba-KAu"/>
+                <constraint firstAttribute="bottom" secondItem="lXh-zy-A1p" secondAttribute="bottom" id="si1-Lb-0Bl"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="lXh-zy-A1p" id="nGC-a1-4tS"/>
+                <outlet property="lineView" destination="7Od-Ma-T41" id="JeV-al-Pzb"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="62"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

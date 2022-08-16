@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B87DFF204C62698AFD15FB1 /* Pods_QuickBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7512D64857E086A3A885B82 /* Pods_QuickBrowser.framework */; };
 		8426B0A928AB4C1E00E4F408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426B0A828AB4C1E00E4F408 /* AppDelegate.swift */; };
 		8426B0AB28AB4C1E00E4F408 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426B0AA28AB4C1E00E4F408 /* SceneDelegate.swift */; };
 		8426B0AD28AB4C1E00E4F408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426B0AC28AB4C1E00E4F408 /* ViewController.swift */; };
 		8426B0B028AB4C1E00E4F408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426B0AE28AB4C1E00E4F408 /* Main.storyboard */; };
 		8426B0B228AB4C2300E4F408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8426B0B128AB4C2300E4F408 /* Assets.xcassets */; };
 		8426B0B528AB4C2300E4F408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426B0B328AB4C2300E4F408 /* LaunchScreen.storyboard */; };
+		C7A1C11928AB765700E1E972 /* AppOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10028AB765700E1E972 /* AppOptions.swift */; };
+		C7A1C11A28AB765700E1E972 /* BrowserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10128AB765700E1E972 /* BrowserManager.swift */; };
+		C7A1C11B28AB765700E1E972 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10228AB765700E1E972 /* Helper.swift */; };
+		C7A1C11C28AB765700E1E972 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10328AB765700E1E972 /* FirebaseManager.swift */; };
+		C7A1C11D28AB765700E1E972 /* LaunchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C10528AB765700E1E972 /* LaunchVC.xib */; };
+		C7A1C11E28AB765700E1E972 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10628AB765700E1E972 /* BaseVC.swift */; };
+		C7A1C11F28AB765700E1E972 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10728AB765700E1E972 /* RootVC.swift */; };
+		C7A1C12028AB765700E1E972 /* TabVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C10828AB765700E1E972 /* TabVC.xib */; };
+		C7A1C12128AB765700E1E972 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10928AB765700E1E972 /* TabVC.swift */; };
+		C7A1C12228AB765700E1E972 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C10A28AB765700E1E972 /* HomeVC.xib */; };
+		C7A1C12328AB765700E1E972 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10B28AB765700E1E972 /* HomeVC.swift */; };
+		C7A1C12428AB765700E1E972 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10C28AB765700E1E972 /* LaunchVC.swift */; };
+		C7A1C12528AB765700E1E972 /* CleanAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10E28AB765700E1E972 /* CleanAnimationView.swift */; };
+		C7A1C12628AB765700E1E972 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10F28AB765700E1E972 /* PrivacyView.swift */; };
+		C7A1C12728AB765700E1E972 /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11028AB765700E1E972 /* SettingView.xib */; };
+		C7A1C12828AB765700E1E972 /* TabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11128AB765700E1E972 /* TabCell.xib */; };
+		C7A1C12928AB765700E1E972 /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11228AB765700E1E972 /* TabCell.swift */; };
+		C7A1C12A28AB765700E1E972 /* CleanAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11328AB765700E1E972 /* CleanAlertView.xib */; };
+		C7A1C12B28AB765700E1E972 /* TermsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11428AB765700E1E972 /* TermsView.xib */; };
+		C7A1C12C28AB765700E1E972 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11528AB765700E1E972 /* TermsView.swift */; };
+		C7A1C12D28AB765700E1E972 /* CleanAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11628AB765700E1E972 /* CleanAlertView.swift */; };
+		C7A1C12E28AB765700E1E972 /* PrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11728AB765700E1E972 /* PrivacyView.xib */; };
+		C7A1C12F28AB765700E1E972 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11828AB765700E1E972 /* SettingView.swift */; };
+		C7A1C13228AB781600E1E972 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17620B0327BB3BF4CADAF2A7 /* Pods-QuickBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickBrowser.debug.xcconfig"; path = "Target Support Files/Pods-QuickBrowser/Pods-QuickBrowser.debug.xcconfig"; sourceTree = "<group>"; };
 		8426B0A528AB4C1E00E4F408 /* QuickBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426B0A828AB4C1E00E4F408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8426B0AA28AB4C1E00E4F408 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +50,32 @@
 		8426B0B128AB4C2300E4F408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8426B0B428AB4C2300E4F408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8426B0B628AB4C2300E4F408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7512D64857E086A3A885B82 /* Pods_QuickBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A1C10028AB765700E1E972 /* AppOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOptions.swift; sourceTree = "<group>"; };
+		C7A1C10128AB765700E1E972 /* BrowserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserManager.swift; sourceTree = "<group>"; };
+		C7A1C10228AB765700E1E972 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		C7A1C10328AB765700E1E972 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		C7A1C10528AB765700E1E972 /* LaunchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchVC.xib; sourceTree = "<group>"; };
+		C7A1C10628AB765700E1E972 /* BaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		C7A1C10728AB765700E1E972 /* RootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		C7A1C10828AB765700E1E972 /* TabVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabVC.xib; sourceTree = "<group>"; };
+		C7A1C10928AB765700E1E972 /* TabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
+		C7A1C10A28AB765700E1E972 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		C7A1C10B28AB765700E1E972 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C7A1C10C28AB765700E1E972 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		C7A1C10E28AB765700E1E972 /* CleanAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanAnimationView.swift; sourceTree = "<group>"; };
+		C7A1C10F28AB765700E1E972 /* PrivacyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		C7A1C11028AB765700E1E972 /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
+		C7A1C11128AB765700E1E972 /* TabCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCell.xib; sourceTree = "<group>"; };
+		C7A1C11228AB765700E1E972 /* TabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
+		C7A1C11328AB765700E1E972 /* CleanAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CleanAlertView.xib; sourceTree = "<group>"; };
+		C7A1C11428AB765700E1E972 /* TermsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TermsView.xib; sourceTree = "<group>"; };
+		C7A1C11528AB765700E1E972 /* TermsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		C7A1C11628AB765700E1E972 /* CleanAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanAlertView.swift; sourceTree = "<group>"; };
+		C7A1C11728AB765700E1E972 /* PrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyView.xib; sourceTree = "<group>"; };
+		C7A1C11828AB765700E1E972 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6AE3EC624941171EF7716D0 /* Pods-QuickBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickBrowser.release.xcconfig"; path = "Target Support Files/Pods-QuickBrowser/Pods-QuickBrowser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +83,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B87DFF204C62698AFD15FB1 /* Pods_QuickBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		178A523329E500DE3581F218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7512D64857E086A3A885B82 /* Pods_QuickBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8426B09C28AB4C1E00E4F408 = {
 			isa = PBXGroup;
 			children = (
 				8426B0A728AB4C1E00E4F408 /* QuickBrowser */,
 				8426B0A628AB4C1E00E4F408 /* Products */,
+				CF30515A5E513F129B4A4A78 /* Pods */,
+				178A523329E500DE3581F218 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +119,10 @@
 		8426B0A728AB4C1E00E4F408 /* QuickBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */,
+				C7A1C10428AB765700E1E972 /* ControllerNIB */,
+				C7A1C0FF28AB765700E1E972 /* Utils */,
+				C7A1C10D28AB765700E1E972 /* Views */,
 				8426B0A828AB4C1E00E4F408 /* AppDelegate.swift */,
 				8426B0AA28AB4C1E00E4F408 /* SceneDelegate.swift */,
 				8426B0AC28AB4C1E00E4F408 /* ViewController.swift */,
@@ -67,6 +134,59 @@
 			path = QuickBrowser;
 			sourceTree = "<group>";
 		};
+		C7A1C0FF28AB765700E1E972 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1C10028AB765700E1E972 /* AppOptions.swift */,
+				C7A1C10128AB765700E1E972 /* BrowserManager.swift */,
+				C7A1C10228AB765700E1E972 /* Helper.swift */,
+				C7A1C10328AB765700E1E972 /* FirebaseManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C7A1C10428AB765700E1E972 /* ControllerNIB */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1C10528AB765700E1E972 /* LaunchVC.xib */,
+				C7A1C10628AB765700E1E972 /* BaseVC.swift */,
+				C7A1C10728AB765700E1E972 /* RootVC.swift */,
+				C7A1C10828AB765700E1E972 /* TabVC.xib */,
+				C7A1C10928AB765700E1E972 /* TabVC.swift */,
+				C7A1C10A28AB765700E1E972 /* HomeVC.xib */,
+				C7A1C10B28AB765700E1E972 /* HomeVC.swift */,
+				C7A1C10C28AB765700E1E972 /* LaunchVC.swift */,
+			);
+			path = ControllerNIB;
+			sourceTree = "<group>";
+		};
+		C7A1C10D28AB765700E1E972 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1C10E28AB765700E1E972 /* CleanAnimationView.swift */,
+				C7A1C10F28AB765700E1E972 /* PrivacyView.swift */,
+				C7A1C11028AB765700E1E972 /* SettingView.xib */,
+				C7A1C11128AB765700E1E972 /* TabCell.xib */,
+				C7A1C11228AB765700E1E972 /* TabCell.swift */,
+				C7A1C11328AB765700E1E972 /* CleanAlertView.xib */,
+				C7A1C11428AB765700E1E972 /* TermsView.xib */,
+				C7A1C11528AB765700E1E972 /* TermsView.swift */,
+				C7A1C11628AB765700E1E972 /* CleanAlertView.swift */,
+				C7A1C11728AB765700E1E972 /* PrivacyView.xib */,
+				C7A1C11828AB765700E1E972 /* SettingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF30515A5E513F129B4A4A78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17620B0327BB3BF4CADAF2A7 /* Pods-QuickBrowser.debug.xcconfig */,
+				E6AE3EC624941171EF7716D0 /* Pods-QuickBrowser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +194,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8426B0B928AB4C2300E4F408 /* Build configuration list for PBXNativeTarget "QuickBrowser" */;
 			buildPhases = (
+				B2D9DD09B9B84E6ABF999411 /* [CP] Check Pods Manifest.lock */,
 				8426B0A128AB4C1E00E4F408 /* Sources */,
 				8426B0A228AB4C1E00E4F408 /* Frameworks */,
 				8426B0A328AB4C1E00E4F408 /* Resources */,
+				F73020545BAC64F7DE6F7E7A /* [CP] Embed Pods Frameworks */,
+				C7A1C13028AB772500E1E972 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,7 +248,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A1C12028AB765700E1E972 /* TabVC.xib in Resources */,
+				C7A1C12A28AB765700E1E972 /* CleanAlertView.xib in Resources */,
+				C7A1C12B28AB765700E1E972 /* TermsView.xib in Resources */,
+				C7A1C12E28AB765700E1E972 /* PrivacyView.xib in Resources */,
+				C7A1C12728AB765700E1E972 /* SettingView.xib in Resources */,
+				C7A1C13228AB781600E1E972 /* GoogleService-Info.plist in Resources */,
+				C7A1C12228AB765700E1E972 /* HomeVC.xib in Resources */,
+				C7A1C12828AB765700E1E972 /* TabCell.xib in Resources */,
 				8426B0B528AB4C2300E4F408 /* LaunchScreen.storyboard in Resources */,
+				C7A1C11D28AB765700E1E972 /* LaunchVC.xib in Resources */,
 				8426B0B228AB4C2300E4F408 /* Assets.xcassets in Resources */,
 				8426B0B028AB4C1E00E4F408 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +265,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B2D9DD09B9B84E6ABF999411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickBrowser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A1C13028AB772500E1E972 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		F73020545BAC64F7DE6F7E7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickBrowser/Pods-QuickBrowser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickBrowser/Pods-QuickBrowser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickBrowser/Pods-QuickBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8426B0A128AB4C1E00E4F408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A1C12C28AB765700E1E972 /* TermsView.swift in Sources */,
+				C7A1C12128AB765700E1E972 /* TabVC.swift in Sources */,
+				C7A1C12D28AB765700E1E972 /* CleanAlertView.swift in Sources */,
+				C7A1C12F28AB765700E1E972 /* SettingView.swift in Sources */,
+				C7A1C11928AB765700E1E972 /* AppOptions.swift in Sources */,
+				C7A1C12928AB765700E1E972 /* TabCell.swift in Sources */,
 				8426B0AD28AB4C1E00E4F408 /* ViewController.swift in Sources */,
+				C7A1C11C28AB765700E1E972 /* FirebaseManager.swift in Sources */,
+				C7A1C11E28AB765700E1E972 /* BaseVC.swift in Sources */,
+				C7A1C12628AB765700E1E972 /* PrivacyView.swift in Sources */,
+				C7A1C12428AB765700E1E972 /* LaunchVC.swift in Sources */,
 				8426B0A928AB4C1E00E4F408 /* AppDelegate.swift in Sources */,
 				8426B0AB28AB4C1E00E4F408 /* SceneDelegate.swift in Sources */,
+				C7A1C11F28AB765700E1E972 /* RootVC.swift in Sources */,
+				C7A1C11A28AB765700E1E972 /* BrowserManager.swift in Sources */,
+				C7A1C12528AB765700E1E972 /* CleanAnimationView.swift in Sources */,
+				C7A1C12328AB765700E1E972 /* HomeVC.swift in Sources */,
+				C7A1C11B28AB765700E1E972 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +492,7 @@
 		};
 		8426B0BA28AB4C2300E4F408 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17620B0327BB3BF4CADAF2A7 /* Pods-QuickBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,16 +500,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickBrowser/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xx.QuickBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -311,6 +521,7 @@
 		};
 		8426B0BB28AB4C2300E4F408 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AE3EC624941171EF7716D0 /* Pods-QuickBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,16 +529,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickBrowser/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = xx.QuickBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

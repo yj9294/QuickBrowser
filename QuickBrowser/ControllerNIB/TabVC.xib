@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabVC" customModule="QuickBrowser" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="xXJ-7F-2se" id="R4d-4Y-qR0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xXJ-7F-2se">
+                    <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="25" minimumInteritemSpacing="25" sectionInsetReference="safeArea" id="w4c-gR-1jx">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="estimatedItemSize" width="155" height="192"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="20" minY="40" maxX="20" maxY="20"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qQr-3K-8ZA"/>
+                        <outlet property="delegate" destination="-1" id="UEL-RV-3qS"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qks-If-iok">
+                    <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHo-4u-Jzy">
+                            <rect key="frame" x="184.5" y="2.5" width="45" height="45"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="tab_add"/>
+                            <connections>
+                                <action selector="addAction" destination="-1" eventType="touchUpInside" id="qPu-QL-Skw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJo-4r-ENQ">
+                            <rect key="frame" x="360" y="10" width="34" height="30"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="backAction" destination="-1" eventType="touchUpInside" id="ED3-Tx-KLa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OTl-yy-a05">
+                            <rect key="frame" x="20" y="10" width="37" height="30"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="doneAction" destination="-1" eventType="touchUpInside" id="2vs-ex-Ndb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CJo-4r-ENQ" secondAttribute="trailing" constant="20" id="5R8-Mg-AxX"/>
+                        <constraint firstItem="oHo-4u-Jzy" firstAttribute="centerY" secondItem="Qks-If-iok" secondAttribute="centerY" id="AF6-3D-hFg"/>
+                        <constraint firstItem="OTl-yy-a05" firstAttribute="leading" secondItem="Qks-If-iok" secondAttribute="leading" constant="20" id="BHh-EA-don"/>
+                        <constraint firstItem="OTl-yy-a05" firstAttribute="centerY" secondItem="Qks-If-iok" secondAttribute="centerY" id="Kg2-Iy-qwy"/>
+                        <constraint firstAttribute="height" constant="50" id="Nvj-1z-9iv"/>
+                        <constraint firstItem="oHo-4u-Jzy" firstAttribute="centerX" secondItem="Qks-If-iok" secondAttribute="centerX" id="ZY9-7o-Pm2"/>
+                        <constraint firstItem="CJo-4r-ENQ" firstAttribute="centerY" secondItem="Qks-If-iok" secondAttribute="centerY" id="tnf-Hl-84h"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.10980392156862745" green="0.15686274509803921" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qks-If-iok" firstAttribute="top" secondItem="xXJ-7F-2se" secondAttribute="bottom" id="8fb-ya-Yjb"/>
+                <constraint firstItem="Qks-If-iok" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EcF-TJ-WjC"/>
+                <constraint firstItem="xXJ-7F-2se" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hBW-Rq-etA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Qks-If-iok" secondAttribute="bottom" id="pes-8P-IPB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qks-If-iok" secondAttribute="trailing" id="vGr-qf-SWH"/>
+                <constraint firstItem="xXJ-7F-2se" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="w59-1k-6vj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xXJ-7F-2se" secondAttribute="trailing" id="yPP-Ei-VXR"/>
+            </constraints>
+            <point key="canvasLocation" x="181" y="68"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_add" width="45" height="45"/>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TermsView" customModule="QuickBrowser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPa-iX-Kdx">
+                    <rect key="frame" x="0.0" y="387.5" width="414" height="508.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bde-yD-P4c">
+                            <rect key="frame" x="157" y="12" width="100" height="3"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="8dg-Fx-SfD"/>
+                                <constraint firstAttribute="width" constant="100" id="RZP-4e-UH6"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PKT-kD-uZm">
+                            <rect key="frame" x="16" y="74.5" width="382" height="400"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="400" id="YJG-Iq-kL9"/>
+                            </constraints>
+                            <mutableString key="text">These Terms of Service ("Terms") and our Privacy Policy govern your use of all available services and apps, so please read them carefully before using the app.
+
+By using our app, you agree to be bound by these terms. If you do not agree to these terms, please do not use. If you use the application on behalf of an organization (such as your employer), you agree to these terms of that organization and you have the right to bind that organization to these terms. In this context, "you" and "your" will refer to the organization.
+
+
+
+Use of data
+
+You agree that the application provider may collect and use technical data and related information, including but not limited to periodically collected technical information about your device, system and application software, and peripherals in order to provide software updates, product support and other services provided to you in connection with the application.
+
+Application providers may use the information we collect, but in a form that does not personally identify you, to improve their products or provide you with services or technology.
+
+
+
+Terms Update
+
+We may revise the Terms from time to time. Changes may be posted to our app, so please check back regularly. The latest version will always be posted on our terms page. If you continue to use our services after the modification takes effect, you agree to be bound by the modified terms. If you do not agree to the new terms, please discontinue use.
+
+
+
+Neither we nor any third party provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or provided on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors, and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</mutableString>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0J1-AL-aMs">
+                            <rect key="frame" x="152" y="39" width="110" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="PKT-kD-uZm" secondAttribute="trailing" constant="16" id="2qq-ak-zVw"/>
+                        <constraint firstItem="0J1-AL-aMs" firstAttribute="centerX" secondItem="ZPa-iX-Kdx" secondAttribute="centerX" id="33L-4a-p8d"/>
+                        <constraint firstItem="bde-yD-P4c" firstAttribute="centerX" secondItem="ZPa-iX-Kdx" secondAttribute="centerX" id="J8V-9M-Tjf"/>
+                        <constraint firstItem="PKT-kD-uZm" firstAttribute="leading" secondItem="ZPa-iX-Kdx" secondAttribute="leading" constant="16" id="Ohm-Wp-r7C"/>
+                        <constraint firstItem="0J1-AL-aMs" firstAttribute="top" secondItem="bde-yD-P4c" secondAttribute="bottom" constant="24" id="cwG-en-Tv4"/>
+                        <constraint firstItem="PKT-kD-uZm" firstAttribute="top" secondItem="0J1-AL-aMs" secondAttribute="bottom" constant="16" id="qQK-oQ-Wch"/>
+                        <constraint firstItem="bde-yD-P4c" firstAttribute="top" secondItem="ZPa-iX-Kdx" secondAttribute="top" constant="12" id="vos-K8-fsv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZPa-iX-Kdx" secondAttribute="bottom" id="AfR-NV-CA1"/>
+                <constraint firstItem="ZPa-iX-Kdx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HE6-dc-Byr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PKT-kD-uZm" secondAttribute="bottom" id="V40-Kj-STs"/>
+                <constraint firstAttribute="trailing" secondItem="ZPa-iX-Kdx" secondAttribute="trailing" id="gRq-Hn-bfq"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="ZPa-iX-Kdx" id="5ht-0R-fyy"/>
+                <outlet property="lineView" destination="bde-yD-P4c" id="GoQ-bQ-a8I"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="62"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
