@@ -105,7 +105,7 @@ class HomeVC: BaseVC {
                 let vc = UIActivityViewController(activityItems: [url], applicationActivities: nil)
                 self.present(vc, animated: true)
             } else {
-                let vc = UIActivityViewController(activityItems: ["https://itunes.apple.com/cn/app/id"], applicationActivities: nil)
+                let vc = UIActivityViewController(activityItems: ["https://itunes.apple.com/cn/app/id1639973863"], applicationActivities: nil)
                 self.present(vc, animated: true)
             }
             FirebaseManager.logEvent(name: .shareClick)
@@ -124,7 +124,7 @@ class HomeVC: BaseVC {
         }
         
         settingView.rateHandle = {
-            let url = URL(string: "https://itunes.apple.com/cn/app/id")
+            let url = URL(string: "https://itunes.apple.com/cn/app/id1639973863")
             if let url = url {
                 UIApplication.shared.open(url)
             }
