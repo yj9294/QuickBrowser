@@ -34,7 +34,9 @@ class HomeVC: BaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        ATTrackingManager.requestTrackingAuthorization { _ in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            ATTrackingManager.requestTrackingAuthorization { _ in
+            }
         }
         self.searchView.addTarget(self, action: #selector(searchAction), for: .valueChanged)
     }
