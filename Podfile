@@ -11,4 +11,5 @@ target 'QuickBrowser' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Crashlytics'
   pod 'Firebase/RemoteConfig'
+  pod 'Google-Mobile-Ads-SDK'
 end

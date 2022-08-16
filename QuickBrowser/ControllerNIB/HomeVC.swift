@@ -26,6 +26,8 @@ class HomeVC: BaseVC {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var progressView: UIProgressView!
     
+    @IBOutlet weak var adView: NativeAdView!
+    
     var item: BrowserItem {
         BrowserManager.defaults.item
     }
@@ -39,6 +41,14 @@ class HomeVC: BaseVC {
             }
         }
         self.searchView.addTarget(self, action: #selector(searchAction), for: .valueChanged)
+        
+        NotificationCenter.default.addObserver(forName: .nativeUpdate, object: nil, queue: .main) { [weak self] noti in
+            if let ad = noti.object as? NativeADModel {
+                self?.adView.refreshUI(ad: ad.nativeAd)
+            } else {
+                self?.adView.refreshUI(ad: nil)
+            }
+        }
     }
 
     @IBAction func goBackAction(_ sender: Any) {
@@ -185,6 +195,11 @@ class HomeVC: BaseVC {
         if self.item.isNavigation {
             FirebaseManager.logEvent(name: .navigaShow)
         }
+        ADManager.share.load(.native)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        ADManager.share.close(.native)
     }
 }
 

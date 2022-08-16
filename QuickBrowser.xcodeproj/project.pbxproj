@@ -37,8 +37,14 @@
 		C7A1C12D28AB765700E1E972 /* CleanAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11628AB765700E1E972 /* CleanAlertView.swift */; };
 		C7A1C12E28AB765700E1E972 /* PrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11728AB765700E1E972 /* PrivacyView.xib */; };
 		C7A1C12F28AB765700E1E972 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11828AB765700E1E972 /* SettingView.swift */; };
-		C7A1C13228AB781600E1E972 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */; };
 		C7A1C13628AB96D800E1E972 /* cleanAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13528AB96D800E1E972 /* cleanAnimation.json */; };
+		C7A1C13828AB9C6300E1E972 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13728AB9C6300E1E972 /* GoogleService-Info.plist */; };
+		C7A1C13E28ABA02300E1E972 /* ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C13A28ABA02200E1E972 /* ADModel.swift */; };
+		C7A1C13F28ABA02300E1E972 /* ADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C13B28ABA02200E1E972 /* ADManager.swift */; };
+		C7A1C14028ABA02300E1E972 /* ADConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C13C28ABA02200E1E972 /* ADConfig.swift */; };
+		C7A1C14128ABA02300E1E972 /* admob.json in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13D28ABA02200E1E972 /* admob.json */; };
+		C7A1C14428ABA03C00E1E972 /* NativeAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C14228ABA03B00E1E972 /* NativeAdView.swift */; };
+		C7A1C14528ABA03C00E1E972 /* NativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C14328ABA03C00E1E972 /* NativeAdView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,8 +81,14 @@
 		C7A1C11628AB765700E1E972 /* CleanAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanAlertView.swift; sourceTree = "<group>"; };
 		C7A1C11728AB765700E1E972 /* PrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyView.xib; sourceTree = "<group>"; };
 		C7A1C11828AB765700E1E972 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7A1C13528AB96D800E1E972 /* cleanAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cleanAnimation.json; sourceTree = "<group>"; };
+		C7A1C13728AB9C6300E1E972 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7A1C13A28ABA02200E1E972 /* ADModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADModel.swift; sourceTree = "<group>"; };
+		C7A1C13B28ABA02200E1E972 /* ADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADManager.swift; sourceTree = "<group>"; };
+		C7A1C13C28ABA02200E1E972 /* ADConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADConfig.swift; sourceTree = "<group>"; };
+		C7A1C13D28ABA02200E1E972 /* admob.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = admob.json; sourceTree = "<group>"; };
+		C7A1C14228ABA03B00E1E972 /* NativeAdView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAdView.swift; sourceTree = "<group>"; };
+		C7A1C14328ABA03C00E1E972 /* NativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAdView.xib; sourceTree = "<group>"; };
 		E6AE3EC624941171EF7716D0 /* Pods-QuickBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickBrowser.release.xcconfig"; path = "Target Support Files/Pods-QuickBrowser/Pods-QuickBrowser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,8 +133,9 @@
 		8426B0A728AB4C1E00E4F408 /* QuickBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				C7A1C13728AB9C6300E1E972 /* GoogleService-Info.plist */,
 				C7A1C13528AB96D800E1E972 /* cleanAnimation.json */,
-				C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */,
+				C7A1C13928ABA02200E1E972 /* AD */,
 				C7A1C10428AB765700E1E972 /* ControllerNIB */,
 				C7A1C0FF28AB765700E1E972 /* Utils */,
 				C7A1C10D28AB765700E1E972 /* Views */,
@@ -177,8 +190,21 @@
 				C7A1C11128AB765700E1E972 /* TabCell.xib */,
 				C7A1C11528AB765700E1E972 /* TermsView.swift */,
 				C7A1C11428AB765700E1E972 /* TermsView.xib */,
+				C7A1C14228ABA03B00E1E972 /* NativeAdView.swift */,
+				C7A1C14328ABA03C00E1E972 /* NativeAdView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C7A1C13928ABA02200E1E972 /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				C7A1C13A28ABA02200E1E972 /* ADModel.swift */,
+				C7A1C13B28ABA02200E1E972 /* ADManager.swift */,
+				C7A1C13C28ABA02200E1E972 /* ADConfig.swift */,
+				C7A1C13D28ABA02200E1E972 /* admob.json */,
+			);
+			path = AD;
 			sourceTree = "<group>";
 		};
 		CF30515A5E513F129B4A4A78 /* Pods */ = {
@@ -250,13 +276,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A1C13828AB9C6300E1E972 /* GoogleService-Info.plist in Resources */,
 				C7A1C12028AB765700E1E972 /* TabVC.xib in Resources */,
 				C7A1C12A28AB765700E1E972 /* CleanAlertView.xib in Resources */,
 				C7A1C12B28AB765700E1E972 /* TermsView.xib in Resources */,
 				C7A1C12E28AB765700E1E972 /* PrivacyView.xib in Resources */,
 				C7A1C12728AB765700E1E972 /* SettingView.xib in Resources */,
-				C7A1C13228AB781600E1E972 /* GoogleService-Info.plist in Resources */,
 				C7A1C12228AB765700E1E972 /* HomeVC.xib in Resources */,
+				C7A1C14528ABA03C00E1E972 /* NativeAdView.xib in Resources */,
+				C7A1C14128ABA02300E1E972 /* admob.json in Resources */,
 				C7A1C12828AB765700E1E972 /* TabCell.xib in Resources */,
 				8426B0B528AB4C2300E4F408 /* LaunchScreen.storyboard in Resources */,
 				C7A1C11D28AB765700E1E972 /* LaunchVC.xib in Resources */,
@@ -317,15 +345,19 @@
 			files = (
 				C7A1C12C28AB765700E1E972 /* TermsView.swift in Sources */,
 				C7A1C12128AB765700E1E972 /* TabVC.swift in Sources */,
+				C7A1C13E28ABA02300E1E972 /* ADModel.swift in Sources */,
 				C7A1C12D28AB765700E1E972 /* CleanAlertView.swift in Sources */,
 				C7A1C12F28AB765700E1E972 /* SettingView.swift in Sources */,
 				C7A1C11928AB765700E1E972 /* AppOptions.swift in Sources */,
+				C7A1C13F28ABA02300E1E972 /* ADManager.swift in Sources */,
 				C7A1C12928AB765700E1E972 /* TabCell.swift in Sources */,
 				8426B0AD28AB4C1E00E4F408 /* ViewController.swift in Sources */,
 				C7A1C11C28AB765700E1E972 /* FirebaseManager.swift in Sources */,
+				C7A1C14028ABA02300E1E972 /* ADConfig.swift in Sources */,
 				C7A1C11E28AB765700E1E972 /* BaseVC.swift in Sources */,
 				C7A1C12628AB765700E1E972 /* PrivacyView.swift in Sources */,
 				C7A1C12428AB765700E1E972 /* LaunchVC.swift in Sources */,
+				C7A1C14428ABA03C00E1E972 /* NativeAdView.swift in Sources */,
 				8426B0A928AB4C1E00E4F408 /* AppDelegate.swift in Sources */,
 				8426B0AB28AB4C1E00E4F408 /* SceneDelegate.swift in Sources */,
 				C7A1C11F28AB765700E1E972 /* RootVC.swift in Sources */,
@@ -482,7 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = K5ZC2R9SS8;
+				DEVELOPMENT_TEAM = 7HTJ8C6E28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickBrowser/Info.plist;
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
@@ -497,7 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.browser.fast.onlin.smart;
+				PRODUCT_BUNDLE_IDENTIFIER = xx.quickbrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -513,7 +545,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = K5ZC2R9SS8;
+				DEVELOPMENT_TEAM = 7HTJ8C6E28;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickBrowser/Info.plist;
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
@@ -528,7 +560,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.browser.fast.onlin.smart;
+				PRODUCT_BUNDLE_IDENTIFIER = xx.quickbrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

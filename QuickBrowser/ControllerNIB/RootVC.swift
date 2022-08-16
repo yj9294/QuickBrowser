@@ -28,6 +28,7 @@ class RootVC: UITabBarController {
         FirebaseManager.logProperty(name: .local, value: Locale.current.regionCode)
         FirebaseManager.logEvent(name: .open)
         FirebaseManager.logEvent(name: .openCold)
+        ADManager.share.requestRemoteConfig()
     }
 
     func launching() {

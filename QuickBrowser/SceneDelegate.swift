@@ -56,6 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
+        ADManager.share.dismiss()
         if scenceEnterbackground == true {
             FirebaseManager.logEvent(name: .openHot)
         }
@@ -71,6 +72,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
+        ADManager.share.dismiss()
         scenceEnterbackground = true
         CleanAnimationView.clean()
     }
