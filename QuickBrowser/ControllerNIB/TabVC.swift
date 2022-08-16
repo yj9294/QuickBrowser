@@ -11,16 +11,27 @@ class TabVC: BaseVC {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var adView: NativeAdView!
+    
     var dataSource: [BrowserItem] = BrowserManager.defaults.items
     
     var selectItem: BrowserItem = BrowserManager.defaults.item
+    
+    var willApear = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        FirebaseManager.logEvent(name: .tabShow)
 
         let nib = UINib(nibName: TabCell.reuseIdentifier, bundle: .main)
         self.collectionView.register(nib, forCellWithReuseIdentifier: TabCell.reuseIdentifier)
-        FirebaseManager.logEvent(name: .tabShow)
+        NotificationCenter.default.addObserver(forName: .nativeUpdate, object: nil, queue: .main) { [weak self] noti in
+            if let ad = noti.object as? NativeADModel, self?.willApear == true {
+                self?.adView.refreshUI(ad: ad.nativeAd)
+            } else {
+                self?.adView.refreshUI(ad: nil)
+            }
+        }
     }
     
     @IBAction func addAction() {
@@ -51,6 +62,24 @@ class TabVC: BaseVC {
         }
         self.collectionView.reloadData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        willApear = true
+        ADManager.share.load(.native)
+        ADManager.share.load(.interstitial)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        willApear = false
+        ADManager.share.close(.native)
+    }
+    
+    deinit{
+        NotificationCenter.default.removeObserver(self)
+    }
+    
 }
 
 extension TabVC: UICollectionViewDataSource {

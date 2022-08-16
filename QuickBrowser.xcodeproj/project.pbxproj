@@ -164,14 +164,14 @@
 		C7A1C10428AB765700E1E972 /* ControllerNIB */ = {
 			isa = PBXGroup;
 			children = (
-				C7A1C10528AB765700E1E972 /* LaunchVC.xib */,
 				C7A1C10628AB765700E1E972 /* BaseVC.swift */,
-				C7A1C10728AB765700E1E972 /* RootVC.swift */,
-				C7A1C10828AB765700E1E972 /* TabVC.xib */,
-				C7A1C10928AB765700E1E972 /* TabVC.swift */,
-				C7A1C10A28AB765700E1E972 /* HomeVC.xib */,
 				C7A1C10B28AB765700E1E972 /* HomeVC.swift */,
+				C7A1C10A28AB765700E1E972 /* HomeVC.xib */,
 				C7A1C10C28AB765700E1E972 /* LaunchVC.swift */,
+				C7A1C10528AB765700E1E972 /* LaunchVC.xib */,
+				C7A1C10728AB765700E1E972 /* RootVC.swift */,
+				C7A1C10928AB765700E1E972 /* TabVC.swift */,
+				C7A1C10828AB765700E1E972 /* TabVC.xib */,
 			);
 			path = ControllerNIB;
 			sourceTree = "<group>";

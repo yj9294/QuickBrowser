@@ -9,9 +9,10 @@ import UIKit
 import Lottie
 
 class CleanAnimationView: UIView {
+    static let share = CleanAnimationView()
     let animationView: AnimationView = AnimationView(name: "cleanAnimation")
     
-    func play(completion: (()->Void)? = nil) {
+    func play() {
         self.backgroundColor = UIColor(red: 28.0 / 255.0, green: 40.0 / 255.0, blue: 55.0 / 255.0, alpha: 1)
         self.addSubview(animationView)
         let scences: [UIWindowScene] = UIApplication.shared.connectedScenes.filter {
@@ -25,11 +26,12 @@ class CleanAnimationView: UIView {
             animationView.frame = window.bounds
         }
         animationView.play()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.animationView.stop()
-            self.removeFromSuperview()
-            completion?()
-        }
+    }
+    
+    func stop() {
+        self.animationView.stop()
+        self.removeFromSuperview()
+
     }
     
     static func clean() {

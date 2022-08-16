@@ -13,6 +13,8 @@ import AppTrackingTransparency
 class HomeVC: BaseVC {
     
     var start: Date = Date()
+    
+    var willApear = false
 
     @IBOutlet weak var topView: GradientView!
     @IBOutlet weak var bottomView: GradientView!
@@ -43,7 +45,7 @@ class HomeVC: BaseVC {
         self.searchView.addTarget(self, action: #selector(searchAction), for: .valueChanged)
         
         NotificationCenter.default.addObserver(forName: .nativeUpdate, object: nil, queue: .main) { [weak self] noti in
-            if let ad = noti.object as? NativeADModel {
+            if let ad = noti.object as? NativeADModel, self?.willApear == true {
                 self?.adView.refreshUI(ad: ad.nativeAd)
             } else {
                 self?.adView.refreshUI(ad: nil)
@@ -70,26 +72,58 @@ class HomeVC: BaseVC {
         let view = CleanAlertView.loadFromNib()
         view.present()
         view.completion = {
+            /// 关闭首页原生动画
+            ADManager.share.close(.native)
+            /// 开始清理动画
+            CleanAnimationView.share.play()
+            /// 停止网页加载进度条
             self.refreshSearchButton(false)
-            CleanAnimationView().play {
-                BrowserManager.defaults.items = [.navgationItem]
-                self.refreshWebView()
-                self.alert("Clean successfully.")
-                
-                WKWebsiteDataStore.default().fetchDataRecords(ofTypes: [WKWebsiteDataTypeCookies]) {
-                   _ = $0.map {
-                        WKWebsiteDataStore.default().removeData(ofTypes: $0.dataTypes, for: [$0]) {
-                            debugPrint("clean cookies")
-                        }
+            
+            /// 广告请求倒计时
+            var totalProgres = 0.0
+            var duration = 15.6
+            Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
+                let progress = duration / 0.01
+                totalProgres += 1 / progress
+                if scenceEnterbackground {
+                    timer.invalidate()
+                    CleanAnimationView.share.stop()
+                    return
+                }
+                if totalProgres > 1 {
+                    timer.invalidate()
+                    CleanAnimationView.share.stop()
+                    ADManager.share.show(.interstitial) { _ in
+                        self.cleanup()
                     }
                 }
-                
-                FirebaseManager.logEvent(name: .cleanSuccess)
-                FirebaseManager.logEvent(name: .cleanAlert)
-                FirebaseManager.logEvent(name: .navigaShow)
-                
+                if ADManager.share.isLoaded(.interstitial) {
+                    duration = 2.5
+                }
             }
         }
+    }
+    
+    func cleanup() {
+        /// 清理成功完成预加载
+        ADManager.share.load(.native)
+        ADManager.share.load(.interstitial)
+        
+        BrowserManager.defaults.items = [.navgationItem]
+        self.refreshWebView()
+        self.alert("Clean successfully.")
+        
+        WKWebsiteDataStore.default().fetchDataRecords(ofTypes: [WKWebsiteDataTypeCookies]) {
+           _ = $0.map {
+                WKWebsiteDataStore.default().removeData(ofTypes: $0.dataTypes, for: [$0]) {
+                    debugPrint("clean cookies")
+                }
+            }
+        }
+        
+        FirebaseManager.logEvent(name: .cleanSuccess)
+        FirebaseManager.logEvent(name: .cleanAlert)
+        FirebaseManager.logEvent(name: .navigaShow)
     }
     
     @IBAction func goTabAcction(_ sender: Any) {
@@ -190,6 +224,7 @@ class HomeVC: BaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        willApear = true
         self.refreshWebView()
         FirebaseManager.logEvent(name: .homeShow)
         if self.item.isNavigation {
@@ -199,6 +234,8 @@ class HomeVC: BaseVC {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        willApear = false
         ADManager.share.close(.native)
     }
 }
