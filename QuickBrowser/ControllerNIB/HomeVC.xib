@@ -41,164 +41,198 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="654"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCy-0i-679">
-                                    <rect key="frame" x="21" y="231" width="372" height="192"/>
+                                    <rect key="frame" x="39" y="244" width="336" height="166"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdc-0S-zQN">
-                                            <rect key="frame" x="0.0" y="0.0" width="83" height="86"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_fb" imagePlacement="top" title="Facebook" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_fb"/>
                                             <connections>
                                                 <action selector="facebookAction:" destination="-1" eventType="touchUpInside" id="vJw-3X-ART"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kf-vj-I7p">
-                                            <rect key="frame" x="104" y="0.0" width="75" height="86"/>
+                                            <rect key="frame" x="93.5" y="0.0" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_google" imagePlacement="top" title="Google" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_google"/>
                                             <connections>
                                                 <action selector="googleAction:" destination="-1" eventType="touchUpInside" id="6Qp-R6-aJj"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqQ-JN-86w">
-                                            <rect key="frame" x="200.5" y="0.0" width="75.5" height="86"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="86" id="ccz-VE-mcX"/>
-                                            </constraints>
+                                            <rect key="frame" x="187.5" y="0.0" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_yutube" imagePlacement="top" title="YouTube" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_yutube"/>
                                             <connections>
                                                 <action selector="youtubeAction:" destination="-1" eventType="touchUpInside" id="MD4-dY-YeY"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ule-xC-UCc">
-                                            <rect key="frame" x="297" y="0.0" width="75" height="86"/>
+                                            <rect key="frame" x="281" y="0.0" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_twitter" imagePlacement="top" title="Twitter" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_twitter"/>
                                             <connections>
                                                 <action selector="twitterAction:" destination="-1" eventType="touchUpInside" id="VrB-G3-HwG"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXv-PB-E3w">
-                                            <rect key="frame" x="-1" y="106" width="85" height="86"/>
+                                            <rect key="frame" x="0.0" y="91" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_ins" imagePlacement="top" title="Instagram" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_ins"/>
                                             <connections>
                                                 <action selector="instagramAction:" destination="-1" eventType="touchUpInside" id="ooY-76-U24"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6r-md-Mxa">
-                                            <rect key="frame" x="104" y="106" width="75" height="86"/>
+                                            <rect key="frame" x="93.5" y="91" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_ama" imagePlacement="top" title="Amazon" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_ama"/>
                                             <connections>
                                                 <action selector="amazonAction:" destination="-1" eventType="touchUpInside" id="itH-xk-Xdi"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8a-81-bzy">
-                                            <rect key="frame" x="200.5" y="106" width="75" height="86"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="86" id="fJ4-9T-NXu"/>
-                                            </constraints>
+                                            <rect key="frame" x="187.5" y="91" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_gmail" imagePlacement="top" title="Gmail" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_gmail"/>
                                             <connections>
                                                 <action selector="gmailAction:" destination="-1" eventType="touchUpInside" id="tQO-2v-1cW"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVI-6n-UiK">
-                                            <rect key="frame" x="297" y="106" width="75" height="86"/>
+                                            <rect key="frame" x="281" y="91" width="55" height="51"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="Facebook" image="home_fb"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="home_yahoo" imagePlacement="top" title="Yahoo" imagePadding="5">
-                                                <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                            </buttonConfiguration>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                            <state key="normal" title=" " image="home_yahoo"/>
                                             <connections>
                                                 <action selector="yahooAction:" destination="-1" eventType="touchUpInside" id="Flc-06-hfy"/>
                                             </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6WQ-ea-qOk">
-                                            <rect key="frame" x="83" y="0.0" width="21" height="86"/>
+                                            <rect key="frame" x="55" y="0.0" width="38.5" height="51"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cbc-x1-ynD">
-                                            <rect key="frame" x="179" y="0.0" width="21.5" height="86"/>
+                                            <rect key="frame" x="148.5" y="0.0" width="39" height="51"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="81k-QK-PhM">
-                                            <rect key="frame" x="276" y="0.0" width="21" height="86"/>
+                                            <rect key="frame" x="242.5" y="0.0" width="38.5" height="51"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixq-1j-IVC">
+                                            <rect key="frame" x="-2" y="59" width="59" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTm-MP-edS">
+                                            <rect key="frame" x="99.5" y="59" width="43.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Twitter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zem-0G-xjU">
+                                            <rect key="frame" x="287.5" y="59" width="42" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omD-3X-b9d">
+                                            <rect key="frame" x="190" y="59" width="50" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTi-ai-5Ue">
+                                            <rect key="frame" x="-3" y="150" width="60.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3H-UE-y0e">
+                                            <rect key="frame" x="96.5" y="150" width="49" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gmail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDk-hn-uPx">
+                                            <rect key="frame" x="197.5" y="150" width="34.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yahoo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKb-Rg-Vfh">
+                                            <rect key="frame" x="290" y="150" width="37.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="sXv-PB-E3w" firstAttribute="top" secondItem="bdc-0S-zQN" secondAttribute="bottom" constant="20" id="9Mp-uZ-WkY"/>
+                                        <constraint firstItem="RTm-MP-edS" firstAttribute="centerX" secondItem="7kf-vj-I7p" secondAttribute="centerX" id="03b-Ho-ToO"/>
+                                        <constraint firstItem="zem-0G-xjU" firstAttribute="centerX" secondItem="Ule-xC-UCc" secondAttribute="centerX" id="7vl-O2-bkl"/>
+                                        <constraint firstItem="sXv-PB-E3w" firstAttribute="top" secondItem="bdc-0S-zQN" secondAttribute="bottom" constant="40" id="9Mp-uZ-WkY"/>
                                         <constraint firstItem="bdc-0S-zQN" firstAttribute="leading" secondItem="NCy-0i-679" secondAttribute="leading" id="Asg-mx-eMe"/>
+                                        <constraint firstAttribute="bottom" secondItem="uTi-ai-5Ue" secondAttribute="bottom" id="B96-Cw-D7v"/>
+                                        <constraint firstItem="g3H-UE-y0e" firstAttribute="centerX" secondItem="x6r-md-Mxa" secondAttribute="centerX" id="BED-nA-Nge"/>
                                         <constraint firstItem="Ule-xC-UCc" firstAttribute="leading" secondItem="81k-QK-PhM" secondAttribute="trailing" id="BJq-Td-ZpS"/>
                                         <constraint firstItem="Ule-xC-UCc" firstAttribute="top" secondItem="NCy-0i-679" secondAttribute="top" id="BPM-g4-9lX"/>
-                                        <constraint firstAttribute="bottom" secondItem="LVI-6n-UiK" secondAttribute="bottom" id="Brd-uf-bXy"/>
+                                        <constraint firstItem="dDk-hn-uPx" firstAttribute="centerX" secondItem="s8a-81-bzy" secondAttribute="centerX" id="Blc-fV-eh6"/>
+                                        <constraint firstItem="LVI-6n-UiK" firstAttribute="centerY" secondItem="sXv-PB-E3w" secondAttribute="centerY" id="BmD-zE-Mjl"/>
+                                        <constraint firstItem="omD-3X-b9d" firstAttribute="centerX" secondItem="vqQ-JN-86w" secondAttribute="centerX" id="CbC-mF-Alb"/>
                                         <constraint firstItem="x6r-md-Mxa" firstAttribute="centerX" secondItem="7kf-vj-I7p" secondAttribute="centerX" id="FwA-OY-UrC"/>
+                                        <constraint firstAttribute="bottom" secondItem="dDk-hn-uPx" secondAttribute="bottom" id="HHI-oi-var"/>
+                                        <constraint firstItem="uTi-ai-5Ue" firstAttribute="centerX" secondItem="sXv-PB-E3w" secondAttribute="centerX" id="Hcd-m3-tp6"/>
                                         <constraint firstItem="sXv-PB-E3w" firstAttribute="centerX" secondItem="bdc-0S-zQN" secondAttribute="centerX" id="Ikz-Vm-CtD"/>
+                                        <constraint firstItem="Ixq-1j-IVC" firstAttribute="top" secondItem="bdc-0S-zQN" secondAttribute="bottom" constant="8" id="M1Z-wh-Phe"/>
                                         <constraint firstItem="LVI-6n-UiK" firstAttribute="centerX" secondItem="Ule-xC-UCc" secondAttribute="centerX" id="MFV-Rt-cGS"/>
+                                        <constraint firstAttribute="bottom" secondItem="g3H-UE-y0e" secondAttribute="bottom" id="MGf-R3-rUI"/>
                                         <constraint firstItem="6WQ-ea-qOk" firstAttribute="top" secondItem="bdc-0S-zQN" secondAttribute="top" id="N3F-jg-x7V"/>
                                         <constraint firstItem="6WQ-ea-qOk" firstAttribute="leading" secondItem="bdc-0S-zQN" secondAttribute="trailing" id="Qbg-E0-P0B"/>
                                         <constraint firstItem="81k-QK-PhM" firstAttribute="top" secondItem="Cbc-x1-ynD" secondAttribute="top" id="RcH-Z8-02e"/>
-                                        <constraint firstAttribute="bottom" secondItem="sXv-PB-E3w" secondAttribute="bottom" id="UTf-dc-4T1"/>
                                         <constraint firstItem="vqQ-JN-86w" firstAttribute="top" secondItem="NCy-0i-679" secondAttribute="top" id="VGh-bd-kz6"/>
                                         <constraint firstItem="81k-QK-PhM" firstAttribute="bottom" secondItem="Cbc-x1-ynD" secondAttribute="bottom" id="aAM-4B-aUN"/>
                                         <constraint firstAttribute="trailing" secondItem="Ule-xC-UCc" secondAttribute="trailing" id="aV8-HC-mCz"/>
                                         <constraint firstItem="6WQ-ea-qOk" firstAttribute="bottom" secondItem="bdc-0S-zQN" secondAttribute="bottom" id="aq6-5e-Ckb"/>
+                                        <constraint firstItem="ZKb-Rg-Vfh" firstAttribute="centerX" secondItem="LVI-6n-UiK" secondAttribute="centerX" id="bzL-te-4an"/>
                                         <constraint firstItem="7kf-vj-I7p" firstAttribute="leading" secondItem="6WQ-ea-qOk" secondAttribute="trailing" id="c1S-D9-F8i"/>
-                                        <constraint firstAttribute="bottom" secondItem="s8a-81-bzy" secondAttribute="bottom" id="im5-YD-1Ju"/>
+                                        <constraint firstItem="uTi-ai-5Ue" firstAttribute="top" secondItem="sXv-PB-E3w" secondAttribute="bottom" constant="8" id="hyM-Qi-QP2"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZKb-Rg-Vfh" secondAttribute="bottom" id="j4C-Z1-eyP"/>
                                         <constraint firstItem="bdc-0S-zQN" firstAttribute="top" secondItem="NCy-0i-679" secondAttribute="top" id="jEk-i7-4PB"/>
                                         <constraint firstItem="7kf-vj-I7p" firstAttribute="top" secondItem="NCy-0i-679" secondAttribute="top" id="lYU-bL-1NV"/>
+                                        <constraint firstItem="omD-3X-b9d" firstAttribute="centerY" secondItem="Ixq-1j-IVC" secondAttribute="centerY" id="mJw-uF-muU"/>
                                         <constraint firstItem="Cbc-x1-ynD" firstAttribute="bottom" secondItem="7kf-vj-I7p" secondAttribute="bottom" id="mnK-M2-NeG"/>
-                                        <constraint firstAttribute="bottom" secondItem="x6r-md-Mxa" secondAttribute="bottom" id="nh7-Fs-lRE"/>
+                                        <constraint firstItem="x6r-md-Mxa" firstAttribute="centerY" secondItem="sXv-PB-E3w" secondAttribute="centerY" id="mzs-T2-pGS"/>
+                                        <constraint firstItem="s8a-81-bzy" firstAttribute="centerY" secondItem="x6r-md-Mxa" secondAttribute="centerY" id="pIU-4e-ZTe"/>
                                         <constraint firstItem="s8a-81-bzy" firstAttribute="centerX" secondItem="vqQ-JN-86w" secondAttribute="centerX" id="t7Q-TE-hyw"/>
                                         <constraint firstItem="vqQ-JN-86w" firstAttribute="leading" secondItem="Cbc-x1-ynD" secondAttribute="trailing" id="vDj-rS-CAD"/>
+                                        <constraint firstItem="Ixq-1j-IVC" firstAttribute="centerX" secondItem="bdc-0S-zQN" secondAttribute="centerX" id="vO9-QW-uDm"/>
                                         <constraint firstItem="Cbc-x1-ynD" firstAttribute="leading" secondItem="7kf-vj-I7p" secondAttribute="trailing" id="vYu-ba-fTm"/>
                                         <constraint firstItem="81k-QK-PhM" firstAttribute="leading" secondItem="vqQ-JN-86w" secondAttribute="trailing" id="vdU-uA-97M"/>
                                         <constraint firstItem="Cbc-x1-ynD" firstAttribute="top" secondItem="7kf-vj-I7p" secondAttribute="top" id="x4i-3w-ZrF"/>
+                                        <constraint firstItem="zem-0G-xjU" firstAttribute="centerY" secondItem="Ixq-1j-IVC" secondAttribute="centerY" id="yRP-rK-T8X"/>
+                                        <constraint firstItem="RTm-MP-edS" firstAttribute="top" secondItem="7kf-vj-I7p" secondAttribute="bottom" constant="8" id="zde-ZB-XG2"/>
                                     </constraints>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkU-c6-FAs">
-                                    <rect key="frame" x="0.0" y="231" width="21" height="192"/>
+                                    <rect key="frame" x="0.0" y="244" width="39" height="166"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mol-Uw-WvZ">
-                                    <rect key="frame" x="393" y="231" width="21" height="192"/>
+                                    <rect key="frame" x="375" y="244" width="39" height="166"/>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

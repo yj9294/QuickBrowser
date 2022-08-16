@@ -163,17 +163,17 @@
 		C7A1C10D28AB765700E1E972 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7A1C11628AB765700E1E972 /* CleanAlertView.swift */,
+				C7A1C11328AB765700E1E972 /* CleanAlertView.xib */,
 				C7A1C10E28AB765700E1E972 /* CleanAnimationView.swift */,
 				C7A1C10F28AB765700E1E972 /* PrivacyView.swift */,
-				C7A1C11028AB765700E1E972 /* SettingView.xib */,
-				C7A1C11128AB765700E1E972 /* TabCell.xib */,
-				C7A1C11228AB765700E1E972 /* TabCell.swift */,
-				C7A1C11328AB765700E1E972 /* CleanAlertView.xib */,
-				C7A1C11428AB765700E1E972 /* TermsView.xib */,
-				C7A1C11528AB765700E1E972 /* TermsView.swift */,
-				C7A1C11628AB765700E1E972 /* CleanAlertView.swift */,
 				C7A1C11728AB765700E1E972 /* PrivacyView.xib */,
 				C7A1C11828AB765700E1E972 /* SettingView.swift */,
+				C7A1C11028AB765700E1E972 /* SettingView.xib */,
+				C7A1C11228AB765700E1E972 /* TabCell.swift */,
+				C7A1C11128AB765700E1E972 /* TabCell.xib */,
+				C7A1C11528AB765700E1E972 /* TermsView.swift */,
+				C7A1C11428AB765700E1E972 /* TermsView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
