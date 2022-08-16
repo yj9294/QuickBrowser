@@ -38,6 +38,7 @@
 		C7A1C12E28AB765700E1E972 /* PrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11728AB765700E1E972 /* PrivacyView.xib */; };
 		C7A1C12F28AB765700E1E972 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11828AB765700E1E972 /* SettingView.swift */; };
 		C7A1C13228AB781600E1E972 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */; };
+		C7A1C13628AB96D800E1E972 /* cleanAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13528AB96D800E1E972 /* cleanAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		C7A1C11728AB765700E1E972 /* PrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyView.xib; sourceTree = "<group>"; };
 		C7A1C11828AB765700E1E972 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7A1C13528AB96D800E1E972 /* cleanAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cleanAnimation.json; sourceTree = "<group>"; };
 		E6AE3EC624941171EF7716D0 /* Pods-QuickBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickBrowser.release.xcconfig"; path = "Target Support Files/Pods-QuickBrowser/Pods-QuickBrowser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 		8426B0A728AB4C1E00E4F408 /* QuickBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				C7A1C13528AB96D800E1E972 /* cleanAnimation.json */,
 				C7A1C13128AB781500E1E972 /* GoogleService-Info.plist */,
 				C7A1C10428AB765700E1E972 /* ControllerNIB */,
 				C7A1C0FF28AB765700E1E972 /* Utils */,
@@ -258,6 +261,7 @@
 				8426B0B528AB4C2300E4F408 /* LaunchScreen.storyboard in Resources */,
 				C7A1C11D28AB765700E1E972 /* LaunchVC.xib in Resources */,
 				8426B0B228AB4C2300E4F408 /* Assets.xcassets in Resources */,
+				C7A1C13628AB96D800E1E972 /* cleanAnimation.json in Resources */,
 				8426B0B028AB4C1E00E4F408 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
