@@ -16,7 +16,7 @@ class BaseVC: UIViewController {
     }
     
     deinit {
-        debugPrint("\(self.classForCoder) deinit ✅✅✅✅")
+        QLog("\(self.classForCoder) deinit ✅✅✅✅")
     }
 
 }

@@ -95,9 +95,9 @@ class ADManager: NSObject {
             do {
                 let data = try Data(contentsOf: url)
                 adConfig = try JSONDecoder().decode(ADConfig.self, from: data)
-                debugPrint("[Config] Read local ad config success.")
+                QLog("[Config] Read local ad config success.")
             } catch let error {
-                debugPrint("[Config] Read local ad config fail.\(error.localizedDescription)")
+                QLog("[Config] Read local ad config fail.\(error.localizedDescription)")
             }
         }
         
@@ -107,10 +107,10 @@ class ADManager: NSObject {
         remoteConfig.configSettings = settings
         remoteConfig.fetch { [weak remoteConfig] (status, error) -> Void in
             if status == .success {
-                debugPrint("[Config] Config fetcher! ✅")
+                QLog("[Config] Config fetcher! ✅")
                 remoteConfig?.activate(completion: { _, _ in
                     let keys = remoteConfig?.allKeys(from: .remote)
-                    debugPrint("[Config] config params = \(keys ?? [])")
+                    QLog("[Config] config params = \(keys ?? [])")
                     if let remoteAd = remoteConfig?.configValue(forKey: "adConfig").stringValue {
                         // base64 的remote 需要解码
                         let data = Data(base64Encoded: remoteAd) ?? Data()
@@ -120,12 +120,12 @@ class ADManager: NSObject {
                                 self.adConfig = remoteADConfig
                             }
                         } else {
-                            debugPrint("[Config] Config config 'ad_config' is nil or config not json.")
+                            QLog("[Config] Config config 'ad_config' is nil or config not json.")
                         }
                     }
                 })
             } else {
-                debugPrint("[Config] config not fetcher, error = \(error?.localizedDescription ?? "")")
+                QLog("[Config] config not fetcher, error = \(error?.localizedDescription ?? "")")
             }
         }
         
@@ -138,7 +138,7 @@ class ADManager: NSObject {
     /// 限制
     func add(_ status: ADLimit.Status) {
         if isADLimited {
-            debugPrint("[AD] 用戶超限制。")
+            QLog("[AD] 用戶超限制。")
             clean(.all)
             close(.all)
             return
@@ -146,11 +146,11 @@ class ADManager: NSObject {
         if status == .show {
             let showTime = limit?.showTimes ?? 0
             limit?.showTimes = showTime + 1
-            debugPrint("[AD] [LIMIT] showTime: \(showTime+1) total: \(adConfig?.showTimes ?? 0)")
+            QLog("[AD] [LIMIT] showTime: \(showTime+1) total: \(adConfig?.showTimes ?? 0)")
         } else  if status == .click {
             let clickTime = limit?.clickTimes ?? 0
             limit?.clickTimes = clickTime + 1
-            debugPrint("[AD] [LIMIT] clickTime: \(clickTime+1) total: \(adConfig?.clickTimes ?? 0)")
+            QLog("[AD] [LIMIT] clickTime: \(clickTime+1) total: \(adConfig?.clickTimes ?? 0)")
         }
     }
     

@@ -1,7 +1,7 @@
 {
   "installOnlyTouch": true,
-  "showTimes":300,
-  "clickTimes":50,
+  "showTimes":20,
+  "clickTimes":5,
   "ads": [
     {
       "key": "interstitial",

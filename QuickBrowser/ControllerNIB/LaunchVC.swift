@@ -25,11 +25,12 @@ class LaunchVC: BaseVC {
         progress = 0.0
         duration = 2.5 / 0.6
         var isShowAd = false
-        timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] timer in
             guard let self = self else { return }
             let progress = self.duration / 0.01
             self.progress += 1 / progress
             if self.progress > 1.0 {
+                timer.invalidate()
                 ADManager.share.show(.interstitial) { _ in
                     rootVC.launched()
                 }

@@ -25,6 +25,7 @@ class CleanAnimationView: UIView {
             self.frame = window.bounds
             animationView.frame = window.bounds
         }
+        animationView.loopMode = .loop
         animationView.play()
     }
     

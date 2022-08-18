@@ -78,6 +78,9 @@ class HomeVC: BaseVC {
             CleanAnimationView.share.play()
             /// 停止网页加载进度条
             self.refreshSearchButton(false)
+            /// 开始清理的时候美广告需要加载广告的
+            ADManager.share.load(.interstitial)
+
             
             /// 广告请求倒计时
             var totalProgres = 0.0
@@ -116,7 +119,7 @@ class HomeVC: BaseVC {
         WKWebsiteDataStore.default().fetchDataRecords(ofTypes: [WKWebsiteDataTypeCookies]) {
            _ = $0.map {
                 WKWebsiteDataStore.default().removeData(ofTypes: $0.dataTypes, for: [$0]) {
-                    debugPrint("clean cookies")
+                    QLog("clean cookies")
                 }
             }
         }

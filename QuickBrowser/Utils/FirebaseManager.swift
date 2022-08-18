@@ -25,7 +25,7 @@ class FirebaseManager: NSObject {
         Analytics.logEvent(name.rawValue, parameters: params)
         #endif
         
-        debugPrint("[ANA] [Event] \(name.rawValue) \(params ?? [:])")
+        QLog("[ANA] [Event] \(name.rawValue) \(params ?? [:])")
     }
     
     static func logProperty(name: FirebaseProperty, value: String? = nil) {
@@ -43,7 +43,7 @@ class FirebaseManager: NSObject {
 #else
         Analytics.setUserProperty(value, forName: name.rawValue)
 #endif
-        debugPrint("[ANA] [Property] \(name.rawValue) \(value ?? "")")
+        QLog("[ANA] [Property] \(name.rawValue) \(value ?? "")")
     }
 }
 

@@ -19,7 +19,7 @@ var rootVC: RootVC {
 
 func Log(_ log: @autoclosure () -> String) {
     if isRelease {
-        debugPrint("\(log())")
+        QLog("\(log())")
     } else {
         NSLog(log())
     }

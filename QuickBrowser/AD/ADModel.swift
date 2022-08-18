@@ -8,7 +8,6 @@
 import Foundation
 import GoogleMobileAds
 
-var AppEnterbackground = false
 
 class ADBaseModel: NSObject, Identifiable {
     let id = UUID().uuidString
@@ -106,7 +105,7 @@ class ADLoadModel: NSObject {
     /// 显示的时间间隔小于 11.2秒
     var isNeedShow: Bool {
         if Date().timeIntervalSince1970 - impressionDate.timeIntervalSince1970 < 11.1 {
-            debugPrint("[AD] (\(position)) 11.1s 刷新间隔不代表展示，有可能是请求返回")
+            QLog("[AD] (\(position)) 11.1s 刷新间隔不代表展示，有可能是请求返回")
             return false
         }
         return true
@@ -121,53 +120,53 @@ class ADLoadModel: NSObject {
 extension ADLoadModel {
     func beginAddWaterFall(callback: ((_ isSuccess: Bool) -> Void)? = nil) {
         if isPreloadingAd == false, loadedArray.count == 0 {
-            debugPrint("[AD] (\(position.rawValue) start to prepareLoad.--------------------")
+            QLog("[AD] (\(position.rawValue) start to prepareLoad.--------------------")
             if let array: [ADModel] = ADManager.share.adConfig?.arrayWith(position), array.count > 0 {
                 preloadIndex = 0
-                debugPrint("[AD] (\(position.rawValue)) start to load array = \(array.count)")
+                QLog("[AD] (\(position.rawValue)) start to load array = \(array.count)")
                 prepareLoadAd(array: array, callback: callback)
             } else {
               isPreloadingAd = false
-                debugPrint("[AD] (\(position.rawValue)) no configer.")
+                QLog("[AD] (\(position.rawValue)) no configer.")
             }
         } else if loadedArray.count > 0 {
-            debugPrint("[AD] (\(position.rawValue)) loading or loaded ad.")
+            QLog("[AD] (\(position.rawValue)) loading or loaded ad.")
             callback?(loadedArray.count != 0)
         }
     }
     
     func prepareLoadAd(array: [ADModel], callback: ((_ isSuccess: Bool) -> Void)?) {
         if array.count == 0 || preloadIndex >= array.count {
-            debugPrint("[AD] (\(position.rawValue)) prepare Load Ad Failed, no more avaliable config.")
+            QLog("[AD] (\(position.rawValue)) prepare Load Ad Failed, no more avaliable config.")
             isPreloadingAd = false
             return
         }
-        debugPrint("[AD] (\(position)) prepareLoaded.")
+        QLog("[AD] (\(position)) prepareLoaded.")
         if ADManager.share.isUserCanShowAD == false {
-            debugPrint("[AD] (\(position.rawValue)) 用戶禁止請求廣告。")
+            QLog("[AD] (\(position.rawValue)) 用戶禁止請求廣告。")
             ADManager.share.clean(.all)
             ADManager.share.close(.all)
             callback?(false)
             return
         }
         if ADManager.share.isADLimited {
-            debugPrint("[AD] (\(position.rawValue)) 用戶超限制。")
+            QLog("[AD] (\(position.rawValue)) 用戶超限制。")
             callback?(false)
             return
         }
         if loadedArray.count > 0 {
-            debugPrint("[AD] (\(position.rawValue)) 已經加載完成。")
+            QLog("[AD] (\(position.rawValue)) 已經加載完成。")
             callback?(false)
             return
         }
         if isPreloadingAd, preloadIndex == 0 {
-            debugPrint("[AD] (\(position.rawValue)) 正在加載中.")
+            QLog("[AD] (\(position.rawValue)) 正在加載中.")
             callback?(false)
             return
         }
         
 //        if Date().timeIntervalSince1970 - loadDate.timeIntervalSince1970 < 11, position == .indexNative || position == .textTranslateNative || position == .backToIndexInter {
-//            debugPrint("[AD] (\(position.rawValue)) 10s 刷新間隔.")
+//            QLog("[AD] (\(position.rawValue)) 10s 刷新間隔.")
 //            callback?(false)
 //            return
 //        }
@@ -198,11 +197,11 @@ extension ADLoadModel {
             if self.loadingArray.count == 0 {
                 let next = self.preloadIndex + 1
                 if next < array.count {
-                    debugPrint("[AD] (\(self.position.rawValue)) Load Ad Failed: try reload at index: \(next).")
+                    QLog("[AD] (\(self.position.rawValue)) Load Ad Failed: try reload at index: \(next).")
                     self.preloadIndex = next
                     self.prepareLoadAd(array: array, callback: callback)
                 } else {
-                    debugPrint("[AD] (\(self.position.rawValue)) prepare Load Ad Failed: no more avaliable config.")
+                    QLog("[AD] (\(self.position.rawValue)) prepare Load Ad Failed: no more avaliable config.")
                     self.isPreloadingAd = false
                     callback?(false)
                 }
@@ -260,7 +259,7 @@ class InterstitialADModel: ADBaseModel {
     var interstitialAd: GADInterstitialAd?
     
     deinit {
-        debugPrint("[Memory] (\(position.rawValue)) \(self) 💧💧💧.")
+        QLog("[Memory] (\(position.rawValue)) \(self) 💧💧💧.")
     }
 }
 
@@ -271,11 +270,11 @@ extension InterstitialADModel {
         GADInterstitialAd.load(withAdUnitID: model?.theAdID ?? "", request: GADRequest()) { [weak self] ad, error in
             guard let self = self else { return }
             if let error = error {
-                debugPrint("[AD] (\(self.position.rawValue)) load ad FAILED for id \(self.model?.theAdID ?? "invalid id")")
+                QLog("[AD] (\(self.position.rawValue)) load ad FAILED for id \(self.model?.theAdID ?? "invalid id")")
                 self.loadedHandler?(false, error.localizedDescription)
                 return
             }
-            debugPrint("[AD] (\(self.position.rawValue)) load ad SUCCESSFUL for id \(self.model?.theAdID ?? "invalid id")")
+            QLog("[AD] (\(self.position.rawValue)) load ad SUCCESSFUL for id \(self.model?.theAdID ?? "invalid id")")
             self.interstitialAd = ad
             self.interstitialAd?.fullScreenContentDelegate = self
             self.loadedDate = Date()
@@ -294,7 +293,7 @@ extension InterstitialADModel {
             presented.dismiss(animated: true) {
                 topController.dismiss(animated: true)
             }
-            closeHandler?()
+//            closeHandler?()
         }
     }
 }
@@ -306,19 +305,21 @@ extension InterstitialADModel : GADFullScreenContentDelegate {
     }
     
     func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
-        debugPrint("[AD] (\(self.position.rawValue)) didFailToPresentFullScreenContentWithError ad FAILED for id \(self.model?.theAdID ?? "invalid id")")
-        closeHandler?()
+        QLog("[AD] (\(self.position.rawValue)) didFailToPresentFullScreenContentWithError ad FAILED for id \(self.model?.theAdID ?? "invalid id")")
+        if scenceEnterbackground {
+            closeHandler?()
+        }
     }
     
     func adWillDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
-        if !AppEnterbackground {
+        if !scenceEnterbackground {
             closeHandler?()
         }
     }
     
     func adDidRecordClick(_ ad: GADFullScreenPresentingAd) {
 //        if isClicked {
-//            debugPrint("[AD] 連續兩次點擊，限制48小時不請求廣告，並且清楚已緩存廣告。")
+//            QLog("[AD] 連續兩次點擊，限制48小時不請求廣告，並且清楚已緩存廣告。")
 //            clickTwiceHandler?()
 //            /// 拉黑 並且清除廣告數據
 //            if let topController = UIApplication.shared.windows.filter({$0.isKeyWindow}).first?.rootViewController, let presented = topController.presentedViewController {
@@ -342,7 +343,7 @@ class NativeADModel: ADBaseModel {
     var nativeAd: GADNativeAd?
     
     deinit {
-        debugPrint("[Memory] (\(position.rawValue)) \(self) 💧💧💧.")
+        QLog("[Memory] (\(position.rawValue)) \(self) 💧💧💧.")
     }
 }
 
@@ -362,14 +363,14 @@ extension NativeADModel {
 
 extension NativeADModel: GADAdLoaderDelegate {
     func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: Error) {
-        debugPrint("[AD] (\(position.rawValue)) load ad FAILED for id \(model?.theAdID ?? "invalid id")")
+        QLog("[AD] (\(position.rawValue)) load ad FAILED for id \(model?.theAdID ?? "invalid id")")
         loadedHandler?(false, error.localizedDescription)
     }
 }
 
 extension NativeADModel: GADNativeAdLoaderDelegate {
     func adLoader(_ adLoader: GADAdLoader, didReceive nativeAd: GADNativeAd) {
-        debugPrint("[AD] (\(position.rawValue)) load ad SUCCESSFUL for id \(model?.theAdID ?? "invalid id")")
+        QLog("[AD] (\(position.rawValue)) load ad SUCCESSFUL for id \(model?.theAdID ?? "invalid id")")
         self.nativeAd = nativeAd
         loadedDate = Date()
         loadedHandler?(true, "")
