@@ -299,7 +299,7 @@
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_tag" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-UF-hBq">
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_tag" translatesAutoresizingMaskIntoConstraints="NO" id="YmF-UF-hBq">
                                     <rect key="frame" x="310" y="20.5" width="25" height="14"/>
                                 </imageView>
                             </subviews>
