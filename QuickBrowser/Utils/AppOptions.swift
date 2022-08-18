@@ -7,7 +7,7 @@
 
 import Foundation
 
-var isRelease = true
+var isRelease = false
 
 var scenceDelegate: SceneDelegate? = nil
 
