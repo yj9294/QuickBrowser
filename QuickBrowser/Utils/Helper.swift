@@ -91,7 +91,3 @@ extension UserDefaults {
         return object
     }
 }
-
-func QLog(_ log: @autoclosure () -> String) {
-    NSLog("\(log())")
-}

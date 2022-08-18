@@ -14,6 +14,7 @@
 		8426B0B028AB4C1E00E4F408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426B0AE28AB4C1E00E4F408 /* Main.storyboard */; };
 		8426B0B228AB4C2300E4F408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8426B0B128AB4C2300E4F408 /* Assets.xcassets */; };
 		8426B0B528AB4C2300E4F408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426B0B328AB4C2300E4F408 /* LaunchScreen.storyboard */; };
+		C73955CD28AE492D0030BCAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C73955CC28AE492D0030BCAB /* GoogleService-Info.plist */; };
 		C7A1C11928AB765700E1E972 /* AppOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10028AB765700E1E972 /* AppOptions.swift */; };
 		C7A1C11A28AB765700E1E972 /* BrowserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10128AB765700E1E972 /* BrowserManager.swift */; };
 		C7A1C11B28AB765700E1E972 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C10228AB765700E1E972 /* Helper.swift */; };
@@ -38,7 +39,6 @@
 		C7A1C12E28AB765700E1E972 /* PrivacyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C11728AB765700E1E972 /* PrivacyView.xib */; };
 		C7A1C12F28AB765700E1E972 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C11828AB765700E1E972 /* SettingView.swift */; };
 		C7A1C13628AB96D800E1E972 /* cleanAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13528AB96D800E1E972 /* cleanAnimation.json */; };
-		C7A1C13828AB9C6300E1E972 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7A1C13728AB9C6300E1E972 /* GoogleService-Info.plist */; };
 		C7A1C13E28ABA02300E1E972 /* ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C13A28ABA02200E1E972 /* ADModel.swift */; };
 		C7A1C13F28ABA02300E1E972 /* ADManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C13B28ABA02200E1E972 /* ADManager.swift */; };
 		C7A1C14028ABA02300E1E972 /* ADConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C13C28ABA02200E1E972 /* ADConfig.swift */; };
@@ -58,6 +58,7 @@
 		8426B0B428AB4C2300E4F408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8426B0B628AB4C2300E4F408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7512D64857E086A3A885B82 /* Pods_QuickBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73955CC28AE492D0030BCAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7A1C10028AB765700E1E972 /* AppOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppOptions.swift; sourceTree = "<group>"; };
 		C7A1C10128AB765700E1E972 /* BrowserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserManager.swift; sourceTree = "<group>"; };
 		C7A1C10228AB765700E1E972 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		C7A1C11728AB765700E1E972 /* PrivacyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyView.xib; sourceTree = "<group>"; };
 		C7A1C11828AB765700E1E972 /* SettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		C7A1C13528AB96D800E1E972 /* cleanAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cleanAnimation.json; sourceTree = "<group>"; };
-		C7A1C13728AB9C6300E1E972 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C7A1C13A28ABA02200E1E972 /* ADModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADModel.swift; sourceTree = "<group>"; };
 		C7A1C13B28ABA02200E1E972 /* ADManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADManager.swift; sourceTree = "<group>"; };
 		C7A1C13C28ABA02200E1E972 /* ADConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADConfig.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		8426B0A728AB4C1E00E4F408 /* QuickBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				C7A1C13728AB9C6300E1E972 /* GoogleService-Info.plist */,
+				C73955CC28AE492D0030BCAB /* GoogleService-Info.plist */,
 				C7A1C13528AB96D800E1E972 /* cleanAnimation.json */,
 				C7A1C13928ABA02200E1E972 /* AD */,
 				C7A1C10428AB765700E1E972 /* ControllerNIB */,
@@ -276,9 +276,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7A1C13828AB9C6300E1E972 /* GoogleService-Info.plist in Resources */,
 				C7A1C12028AB765700E1E972 /* TabVC.xib in Resources */,
 				C7A1C12A28AB765700E1E972 /* CleanAlertView.xib in Resources */,
+				C73955CD28AE492D0030BCAB /* GoogleService-Info.plist in Resources */,
 				C7A1C12B28AB765700E1E972 /* TermsView.xib in Resources */,
 				C7A1C12E28AB765700E1E972 /* PrivacyView.xib in Resources */,
 				C7A1C12728AB765700E1E972 /* SettingView.xib in Resources */,
@@ -514,7 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 7HTJ8C6E28;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickBrowser/Info.plist;
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
@@ -529,7 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xx.quickbrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.browser.fast.onlin.smart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -545,7 +545,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
-				DEVELOPMENT_TEAM = 7HTJ8C6E28;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QuickBrowser/Info.plist;
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Please allow access to your activity tracking to provide personalized push services and reduce interference caused by irrelevant services.";
@@ -560,7 +560,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xx.quickbrowser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.browser.fast.onlin.smart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

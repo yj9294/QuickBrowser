@@ -9,22 +9,22 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb</string>
+				<string>fb354184470261342</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
 	<key>FacebookAppID</key>
-	<string></string>
+	<string>354184470261342</string>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<true/>
 	<key>FacebookClientToken</key>
-	<string></string>
+	<string>6fc4f2346ac1197fd31ec7cd3c9cd8e1</string>
 	<key>FacebookDisplayName</key>
 	<string>QuickBrowser</string>
 	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<string>ca-app-pub-2799458485489404~4615952459</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>

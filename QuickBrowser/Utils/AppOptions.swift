@@ -7,7 +7,7 @@
 
 import Foundation
 
-var isRelease = false
+var isRelease = true
 
 var scenceDelegate: SceneDelegate? = nil
 
@@ -17,10 +17,10 @@ var rootVC: RootVC {
     scenceDelegate?.rootVC ?? RootVC()
 }
 
-func Log(_ log: @autoclosure () -> String) {
-    if isRelease {
-        QLog("\(log())")
+func QLog(_ log: @autoclosure () -> String) {
+    if !isRelease {
+        NSLog("\(log())")
     } else {
-        NSLog(log())
+        debugPrint(log())
     }
 }
